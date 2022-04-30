@@ -1,0 +1,699 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+.gallery-page-header {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@import url("./main.css");
+.gallery-page-header h3 {
+  color: var(--clr-white);
+}
+.gallery-page-header p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.gallery-images-container {
+  padding: 5px 2rem;
+}
+.single-gallery-image {
+  margin-bottom: 0.5rem;
+}
+.first-image {
+  height: 100%;
+}
+.third-image {
+  height: 100%;
+}
+.second-image {
+  height: 100%;
+  object-fit: cover;
+}
+.fourth-image {
+  height: 100%;
+}
+.gallery-one {
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c d";
+}
+.one {
+  grid-area: a;
+}
+.two {
+  grid-area: b;
+}
+.three {
+  grid-area: c;
+}
+.four {
+  grid-area: d;
+}
+@media screen and (min-width: 768px) {
+  .gallery-one {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b b b"
+      "c c d d";
+  }
+  .one {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-one {
+    grid-template-areas: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a b b c d";
+  }
+  .one {
+    width: 250px;
+  }
+  .three {
+    width: 250px;
+  }
+  .four {
+    width: 250px;
+  }
+}
+
+/*
+============
+Gallery-two
+============
+*/
+
+.gallery-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d d";
+}
+.fifth-image {
+  height: 100%;
+  object-fit: cover;
+}
+.sixth-image {
+  height: 100%;
+  object-fit: cover;
+}
+.seventh-image {
+  height: 100%;
+  object-fit: cover;
+}
+.eighth-image {
+  height: 100%;
+  object-fit: cover;
+}
+.eight {
+  min-height: 390px;
+}
+
+.five {
+  grid-area: a;
+}
+.six {
+  grid-area: b;
+}
+.seven {
+  grid-area: c;
+}
+.eight {
+  grid-area: d;
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-two {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "a a b c d";
+  }
+  .five {
+    height: 390px;
+  }
+  .six {
+    height: 390px;
+  }
+  .seven {
+    height: 390px;
+  }
+}
+
+/*
+=============
+Gallery Three
+=============
+*/
+.gallery-three {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-three {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+  }
+  .nine {
+    max-height: 450px;
+  }
+  .ten {
+    max-height: 450px;
+  }
+  .eleven {
+    max-height: 450px;
+  }
+  .twelve {
+    max-height: 450px;
+  }
+  .tenth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .nineth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .eleventh-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .twelveth-image {
+    max-height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-three {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .eleven {
+    min-width: 250px;
+  }
+  .nine {
+    min-width: 250px;
+  }
+  .ten {
+    min-width: 250px;
+  }
+  .twelve {
+    min-width: 250px;
+  }
+}
+
+/*
+=============
+Gallery-Four
+=============
+*/
+@media screen and (min-width: 768px) {
+  .gallery-four {
+    display: grid;
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "a a b"
+      "c d d";
+  }
+  .thirteen {
+    grid-area: a;
+    max-height: 450px;
+  }
+  .fourteen {
+    grid-area: b;
+    max-height: 450px;
+  }
+  .fifteen {
+    grid-area: c;
+    max-height: 450px;
+  }
+  .sixteen {
+    grid-area: d;
+    max-height: 450px;
+  }
+  .thirteenth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .fourteenth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .fifteenth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .sixteenth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-four {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a b b"
+      "c c d d";
+  }
+  .thirteen {
+    grid-area: a;
+  }
+  .fourteen {
+    grid-area: b;
+  }
+  .fifteen {
+    grid-area: c;
+  }
+  .sixteen {
+    grid-area: d;
+  }
+}
+
+/*
+==============
+Gallery Five
+==============
+*/
+.gallery-five {
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c c"
+    "d e";
+}
+.seventeen {
+  grid-area: a;
+}
+.eighteen {
+  grid-area: b;
+}
+
+.nineteen {
+  min-height: 380px;
+  grid-area: c;
+}
+.nineteenth-image {
+  height: 100%;
+  object-fit: cover;
+}
+.twenty {
+  grid-area: d;
+}
+.twenty-one {
+  grid-area: e;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-five {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c d e";
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .gallery-five {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "a b c d e";
+  }
+  .eighteen {
+    min-height: 380px;
+  }
+  .eighteenth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*
+============
+Gallery Six
+============
+*/
+
+.gallery-six {
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c c"
+    "d e";
+}
+.twenty-two {
+  grid-area: a;
+}
+.twenty-three {
+  grid-area: b;
+}
+.twenty-four {
+  grid-area: c;
+}
+.twenty-five {
+  grid-area: d;
+}
+.twenty-six {
+  grid-area: e;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-six {
+    grid-template-areas:
+      "a b"
+      "c c"
+      "d e";
+  }
+  .twenty-two {
+    min-height: 450px;
+  }
+  .twenty-second-image {
+    height: 100%;
+  }
+  .twenty-three {
+    min-height: 450px;
+  }
+  .twenty-four {
+    min-height: 450px;
+  }
+  .twenty-fourth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .twenty-third-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .twenty-five {
+    min-height: 450px;
+  }
+  .twenty-fifth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .twenty-six {
+    min-height: 450px;
+  }
+  .twenty-sixth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-six {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b b"
+      "c d e";
+  }
+}
+
+.gallery-seven {
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a b"
+    "c c"
+    "d d"
+    "e e";
+}
+.twenty-seven {
+  grid-area: a;
+}
+.twenty-eight {
+  grid-area: b;
+}
+.twenty-nine {
+  grid-area: c;
+}
+.thirty {
+  grid-area: d;
+}
+.thirty-one {
+  grid-area: e;
+}
+@media screen and (min-width: 768px) {
+  .gallery-seven {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e e";
+  }
+  .thirty {
+    min-height: 450px;
+  }
+  .thirtyth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-seven {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "a b c d e";
+  }
+  .thirty {
+    min-height: 280px;
+  }
+  .thirty-one {
+    min-height: 280px;
+  }
+  .thirty-first-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*
+===============
+Gallery Eight
+===============
+*/
+.gallery-eight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    "a a"
+    "b c"
+    "d d"
+    "e e";
+}
+.thirty-two {
+  grid-area: a;
+  min-height: 450px;
+}
+
+.thirty-three {
+  grid-area: b;
+}
+.thirty-four {
+  grid-area: c;
+}
+.thirty-fourth-image {
+  height: 100%;
+  object-fit: cover;
+}
+.thirty-five {
+  grid-area: d;
+}
+.thirty-six {
+  grid-area: e;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-eight {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a a b"
+      "c d e";
+  }
+  .thirty-five {
+    min-height: 300px;
+  }
+  .thirty-fifth-image {
+    height: 100%;
+  }
+  .thirty-six {
+    min-height: 250px;
+  }
+  .thirty-three {
+    min-height: 500px;
+  }
+  .thirty-third-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .thirty-sixth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*
+=============
+Gallery Nine
+=============
+*/
+.gallery-nine {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    "a a"
+    "b b"
+    "c c"
+    "d e"
+    "f f";
+}
+.thirty-seven {
+  grid-area: a;
+}
+.thirty-eight {
+  grid-area: b;
+}
+.thirty-nine {
+  grid-area: c;
+}
+.forty {
+  grid-area: d;
+}
+.forty-one {
+  grid-area: e;
+}
+.forty-two {
+  grid-area: f;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-nine {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+  }
+  .thirty-eight {
+    min-height: 300px;
+  }
+  .thirty-eighth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .thirty-nine {
+    min-height: 300px;
+  }
+  .thirty-nineth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .forty-two {
+    min-height: 300px;
+  }
+  .forty-second-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-nine {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "a b c"
+      "d e f";
+  }
+}
+
+/*
+============
+Gallery Ten
+============
+*/
+@media screen and (min-width: 768px) {
+  .gallery-ten {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+  }
+  .forty-three {
+    min-height: 300px;
+  }
+  .forty-five {
+    min-height: 300px;
+  }
+  .forty-six {
+    min-height: 300px;
+  }
+  .forty-seven {
+    min-height: 300px;
+  }
+  .forty-third-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .forty-fifth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .forty-sixth-image {
+    height: 100%;
+    object-fit: cover;
+  }
+  .forty-seventh-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-ten {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*
+==============
+Gallery Eleven
+==============
+*/
+
+@media screen and (min-width: 768px) {
+  .gallery-eleven {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.5rem;
+  }
+  .gallery-eleven-image-container {
+    min-height: 300px;
+  }
+  .gallery-eleven-image {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery-eleven {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

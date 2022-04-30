@@ -1,0 +1,41 @@
+@import url("./main.css");
+#works-header {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--clr-white);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.works-text {
+  text-align: center;
+}
+
+.works-footer {
+  padding-left: 1rem;
+}
+.works-page-link-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.work-page-single-link {
+  width: 3rem;
+  height: 3rem;
+  border: 0.5px solid var(--clr-border);
+  display: flex;
+  color: var(--clr-primary);
+  justify-content: center;
+  align-items: center;
+}
+.works-first-link {
+  background: var(--clr-dropdown);
+  color: var(--clr-white);
+}
+.work-page-single-link i {
+  color: var(--clr-light-grey);
+}
+.work-page-single-link a {
+  font-size: 1.5rem;
+}
