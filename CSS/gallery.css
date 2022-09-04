@@ -19,6 +19,7 @@ img {
 }
 .gallery-page-header p {
   text-align: center;
+  max-width: 400px;
   margin-top: 0.5rem;
 }
 
@@ -27,6 +28,7 @@ img {
 }
 .single-gallery-image {
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 .first-image {
   height: 100%;
@@ -697,3 +699,89 @@ Gallery Eleven
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+/*
+===============
+Gallery Modal
+===============
+*/
+
+.gallery-modal {
+  background: var(--clr-black);
+  opacity: 0.99;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  animation: modalAnimation 0.7s ease-in-out 1;
+  z-index: 12;
+  height: 100vh;
+  width: 100%;
+  display: none;
+}
+.gallery-modal h3 {
+  color: var(--clr-white);
+}
+#gallery-modal-icons {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  left: 2rem;
+  top: -0.1rem;
+}
+.modal-image-container {
+  width: 400px;
+  height: 450px;
+}
+.modal-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.modal-close-container {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  opacity: 0.6;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+}
+.modal-close-btn {
+  font-size: 2rem;
+  color: var(--clr-white);
+  cursor: pointer;
+}
+#modal-fade-out {
+  animation: modalFadeOut 0.5s ease-in-out 1;
+  animation-fill-mode: forwards;
+}
+@keyframes modalAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* @keyframes modalFadeOut {
+  0% {
+    transform: translate(-50%);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
+} */
